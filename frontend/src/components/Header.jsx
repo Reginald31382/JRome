@@ -32,7 +32,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="dark" variant="dark" expand="md" collapseOnSelect>
+      <Navbar bg="info" variant="dark" expand="md" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
@@ -52,6 +52,9 @@ const Header = () => {
                     </Badge>
                   )}
                 </Nav.Link>
+              </LinkContainer>
+              <LinkContainer to="/about">
+                <Nav.Link>About</Nav.Link>
               </LinkContainer>
               {userInfo ? (
                 <>
