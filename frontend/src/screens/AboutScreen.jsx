@@ -21,6 +21,7 @@ const AboutScreen = () => {
       <VerticalTimeline lineColor="">
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
+          contentStyle={{ background: "rgb(55, 156, 238)", color: "#fff" }}
           date="2024"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<IoMdSchool />}
@@ -40,7 +41,6 @@ const AboutScreen = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          contentStyle={{ background: "rgb(55, 156, 238)", color: "#fff" }}
           date="2021 - 2023"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<MdOutlineWork />}
