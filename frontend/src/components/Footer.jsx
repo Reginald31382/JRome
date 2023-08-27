@@ -11,8 +11,13 @@ const Footer = () => {
     window.scrollTo(0, 0);
   };
   return (
-    <footer onClick={handleScrollToTop}>
-      <div style={{ display: "flex", justifyContent: "center" }}>
+    <>
+      <a
+        style={{ display: "flex", justifyContent: "center" }}
+        href="https://www.instagram.com/smoov_cashus/"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         <BiLogoInstagramAlt
           style={{
             height: "30px",
@@ -34,20 +39,22 @@ const Footer = () => {
             color: "black",
           }}
         />
-      </div>
-      <Container>
-        <Row>
-          <Col
-            className="text-center py-3"
-            style={{ display: "flex", justifyContent: "space-between" }}
-          >
-            Scroll to Top
-            <LiaArrowCircleUpSolid style={{ color: "black" }} />
-            <p>jRome&trade; {currentYear}</p>
-          </Col>
-        </Row>
-      </Container>
-    </footer>
+      </a>
+      <footer onClick={handleScrollToTop}>
+        <Container>
+          <Row>
+            <Col
+              className="text-center py-3"
+              style={{ display: "flex", justifyContent: "space-between" }}
+            >
+              Scroll to Top
+              <LiaArrowCircleUpSolid style={{ color: "black" }} />
+              <p>jRome&trade; {currentYear}</p>
+            </Col>
+          </Row>
+        </Container>
+      </footer>
+    </>
   );
 };
 
