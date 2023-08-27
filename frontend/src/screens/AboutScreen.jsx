@@ -6,6 +6,7 @@ import "react-vertical-timeline-component/style.min.css";
 import { MdOutlineWork } from "react-icons/md";
 import { IoIosSchool } from "react-icons/io";
 import { FiStar } from "react-icons/fi";
+import { GiBattleTank, GiTeacher, GiFuelTank } from "react-icons/gi";
 
 const AboutScreen = () => {
   return (
@@ -74,7 +75,7 @@ const AboutScreen = () => {
           className="vertical-timeline-element--education"
           date="April 2013"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<IoIosSchool />}
+          icon={<GiFuelTank />}
         >
           <h3 className="vertical-timeline-element-title">
             Content Marketing for Web, Mobile and Social Media
@@ -84,29 +85,29 @@ const AboutScreen = () => {
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="November 2012"
+          date="2006 - 2010"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<IoIosSchool />}
+          icon={<GiTeacher />}
         >
-          <h3 className="vertical-timeline-element-title">
-            Agile Development Scrum Master
-          </h3>
-          <h4 className="vertical-timeline-element-subtitle">Certification</h4>
-          <p>Creative Direction, User Experience, Visual Design</p>
+          <h3 className="vertical-timeline-element-title">U.S. Army </h3>
+          <h4 className="vertical-timeline-element-subtitle">
+            Ft. Jackson, S. Carolina
+          </h4>
+          <p>Army Instructor (Reserve)</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
-          date="2002 - 2006"
+          date="2001 - 2004"
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
-          icon={<IoIosSchool />}
+          icon={<GiBattleTank />}
         >
           <h3 className="vertical-timeline-element-title">
-            Bachelor of Science in Interactive Digital Media Visual Imaging
+            U.S. Army (Active)
           </h3>
           <h4 className="vertical-timeline-element-subtitle">
-            Bachelor Degree
+            Ft. Carson, Colorado
           </h4>
-          <p>Creative Direction, Visual Design</p>
+          <p>M1A2 Armored Crewman</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
