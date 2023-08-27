@@ -17,15 +17,29 @@ const HomeScreen = () => {
 
   return (
     <>
-      <a
-        style={{ textDecoration: "none" }}
-        href="https://www.aliveshoes.com"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        className="shadow p-3 mb-5 bg-white rounded "
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
       >
-        <img src={jrome} alt="j'Rome" style={{ height: "120px" }} /> CLICK HERE
-        AND GET YOURS NOW!
-      </a>
+        <a
+          className="shadow p-3 mb-5 bg-white rounded"
+          style={{ textDecoration: "none" }}
+          href="https://www.aliveshoes.com"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <img
+            src={jrome}
+            alt="j'Rome"
+            style={{ height: "120px", paddingBottom: "15px" }}
+          />{" "}
+          CLICK AND GET YOURS!
+        </a>
+      </div>
       <h1
         style={{
           color: "red",
