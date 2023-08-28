@@ -12,7 +12,7 @@ const ProductCarousel = () => {
   ) : error ? (
     <Message variant="danger">{error?.data?.message || error.error}</Message>
   ) : (
-    <Carousel pause="hover" className="bg-info mb-3 rounded">
+    <Carousel pause="hover" className="bg-light shadow-lg mb-3 rounded">
       {products.map((product) => (
         <Carousel.Item key={product._id}>
           <Link
@@ -28,8 +28,8 @@ const ProductCarousel = () => {
                 objectFit: "contain",
               }}
             />
-            <Carousel.Caption className="carousel-caption">
-              <h2 className="text-white text-right">
+            <Carousel.Caption className="carousel-caption ">
+              <h2 className="text-black text-right">
                 {product.name} ${product.price}
               </h2>
             </Carousel.Caption>

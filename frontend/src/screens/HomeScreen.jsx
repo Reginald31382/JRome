@@ -18,7 +18,7 @@ const HomeScreen = () => {
   return (
     <>
       <div
-        className="shadow p-3 mb-5 bg-white rounded "
+        className="shadow-sm p-3 mb-5 bg-white rounded "
         style={{
           display: "flex",
           justifyContent: "center",
@@ -26,7 +26,7 @@ const HomeScreen = () => {
         }}
       >
         <a
-          className="shadow p-3 mb-5 bg-white rounded"
+          className="shadow-lg p-3 mb-5 bg-white rounded"
           style={{ textDecoration: "none" }}
           href="https://www.aliveshoes.com"
           target="_blank"
@@ -37,7 +37,7 @@ const HomeScreen = () => {
             alt="j'Rome"
             style={{ height: "120px", paddingBottom: "15px" }}
           />{" "}
-          CLICK AND GET YOURS!
+          GET YOURS!
         </a>
       </div>
       <h1

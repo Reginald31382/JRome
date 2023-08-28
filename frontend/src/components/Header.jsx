@@ -45,12 +45,14 @@ const Header = () => {
               <SearchBox />
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <FiShoppingCart /> Cart
-                  {cartItems.length > 0 && (
-                    <Badge pill bg="success" style={{ marginLeft: "5px" }}>
-                      {cartItems.reduce((a, c) => a + c.qty, 0)}
-                    </Badge>
-                  )}
+                  <div style={{ display: "flex" }}>
+                    <FiShoppingCart /> Cart
+                    {cartItems.length > 0 && (
+                      <Badge pill bg="info">
+                        {cartItems.reduce((a, c) => a + c.qty, 0)}
+                      </Badge>
+                    )}
+                  </div>
                 </Nav.Link>
               </LinkContainer>
               <LinkContainer to="/about">

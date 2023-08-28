@@ -12,39 +12,52 @@ const Footer = () => {
   };
   return (
     <>
-      <a
-        style={{ display: "flex", justifyContent: "center" }}
-        href="https://www.instagram.com/smoov_cashus/"
-        target="_blank"
-        rel="noopener noreferrer"
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+        }}
       >
-        <BiLogoInstagramAlt
-          style={{
-            height: "30px",
-            width: "30px",
-            color: "black",
-          }}
-        />
-        <CgTwitter
-          style={{
-            height: "30px",
-            width: "30px",
-            color: "black",
-          }}
-        />
-        <FiFacebook
-          style={{
-            height: "30px",
-            width: "30px",
-            color: "black",
-          }}
-        />
-      </a>
+        <a
+          href="https://www.instagram.com/smoov_cashus/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <BiLogoInstagramAlt
+            style={{
+              height: "30px",
+              width: "30px",
+              color: "black",
+            }}
+          />
+        </a>
+        <hr />
+        <a href="/">
+          <CgTwitter
+            style={{
+              height: "30px",
+              width: "30px",
+              color: "black",
+              marginLeft: "5px",
+            }}
+          />
+        </a>
+        <a href="/">
+          <FiFacebook
+            style={{
+              height: "30px",
+              width: "30px",
+              color: "black",
+            }}
+          />
+        </a>
+      </div>
+
       <footer onClick={handleScrollToTop}>
         <Container>
           <Row>
             <Col
-              className="text-center py-3"
+              className="text-center py-3 linkHover"
               style={{ display: "flex", justifyContent: "space-between" }}
             >
               Scroll to Top
