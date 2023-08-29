@@ -1,7 +1,9 @@
+import { useState } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
+import Button from "react-bootstrap/Button";
 import "react-vertical-timeline-component/style.min.css";
 import { MdOutlineWork } from "react-icons/md";
 import { FiStar } from "react-icons/fi";
@@ -10,12 +12,88 @@ import { GrUserManager } from "react-icons/gr";
 import { IoMdSchool } from "react-icons/io";
 import { LinkContainer } from "react-router-bootstrap";
 
+import Technical from "../components/Technical";
+import Literature from "../components/Literature";
+import Portfolio from "../components/Portfolio";
+
 const AboutScreen = () => {
+  const [techShow, setTechShow] = useState(false);
+  const [litShow, setLitShow] = useState(false);
+  const [portfolioShow, setPortfolioShow] = useState(false);
+
   return (
     <>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "space-evenly",
+        }}
+      >
+        <>
+          <Button
+            variant="outline-none"
+            style={{
+              border: "none",
+              boxShadow: "none",
+              color: "black",
+              fontStyle: "italic",
+            }}
+            onClick={() => setTechShow(true)}
+          >
+            <strong>Technical Skills</strong>
+          </Button>
+
+          <Technical show={techShow} onHide={() => setTechShow(false)} />
+        </>
+        <span style={{ color: "black" }}>:</span>
+        <>
+          <Button
+            variant="outline-none"
+            style={{
+              border: "none",
+              boxShadow: "none",
+              color: "black",
+              fontStyle: "italic",
+            }}
+            onClick={() => setPortfolioShow(true)}
+          >
+            <strong> Portfolio</strong>
+          </Button>
+
+          <Portfolio
+            show={portfolioShow}
+            onHide={() => setPortfolioShow(false)}
+          />
+        </>
+        <span style={{ color: "black" }}>:</span>
+        <>
+          <Button
+            variant="outline-none"
+            style={{
+              border: "none",
+              boxShadow: "none",
+              color: "black",
+              fontStyle: "italic",
+            }}
+            onClick={() => setLitShow(true)}
+          >
+            <strong> Literature</strong>
+          </Button>
+
+          <Literature show={litShow} onHide={() => setLitShow(false)} />
+        </>
+      </div>
+
       <div style={{ display: "flex", justifyContent: "center" }}>
-        <h1 style={{ color: "black", fontFamily: "fantasy" }}>
-          My Experiences
+        <h1
+          style={{
+            color: "black",
+            padding: "5px",
+            fontFamily: "Labrada",
+            fontWeight: "bolder",
+          }}
+        >
+          Professional Experience
         </h1>
       </div>
       <VerticalTimeline lineColor="">
