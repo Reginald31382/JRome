@@ -182,7 +182,7 @@ const AboutScreen = () => {
               className="vertical-timeline-element-title linkHover"
               style={{ color: "black" }}
             >
-              CEO - j'Rome LLC
+              CEO - jRome LLC
             </h3>
           </LinkContainer>
 

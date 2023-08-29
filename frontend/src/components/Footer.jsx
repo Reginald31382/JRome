@@ -3,6 +3,7 @@ import { LiaArrowCircleUpSolid } from "react-icons/lia";
 import { BiLogoInstagramAlt } from "react-icons/bi";
 import { CgTwitter } from "react-icons/cg";
 import { FiFacebook } from "react-icons/fi";
+import { FaLinkedin } from "react-icons/fa";
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -44,6 +45,15 @@ const Footer = () => {
         </a>
         <a href="/">
           <FiFacebook
+            style={{
+              height: "30px",
+              width: "30px",
+              color: "black",
+            }}
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/reginald-dixon-bb3431102/">
+          <FaLinkedin
             style={{
               height: "30px",
               width: "30px",
