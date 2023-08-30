@@ -139,7 +139,27 @@ const AboutScreen = () => {
 
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
-          date="2021"
+          date="March - September 2021"
+          iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
+          icon={<IoMdSchool />}
+        >
+          <h3 className="vertical-timeline-element-title">
+            <a
+              href="https://www.grandcircus.co/about/"
+              style={{ textDecoration: "none" }}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Grand Circus
+            </a>
+          </h3>
+          <h4 className="vertical-timeline-element-subtitle">Detroit, MI</h4>
+          <p>FrontEnd / Teacher's Assistant</p>
+        </VerticalTimelineElement>
+
+        <VerticalTimelineElement
+          className="vertical-timeline-element--work"
+          date="October - March 2021"
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
           icon={<IoMdSchool />}
         >
