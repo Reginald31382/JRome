@@ -10,14 +10,27 @@ const Portfolio = (props) => {
       centered
       style={{ color: "black", backgroundColor: "rgba(55, 156, 238, 0.7)" }}
     >
-      <Modal.Header closeButton>
-        <Modal.Title id="contained-modal-title-vcenter">
+      <Modal.Header closeButton style={{ backgroundColor: "black" }}>
+        <Modal.Title
+          id="contained-modal-title-vcenter"
+          style={{ color: "white" }}
+        >
           Coming Soon
         </Modal.Title>
       </Modal.Header>
-      {/* <Modal.Body></Modal.Body> */}
-      <Modal.Footer>
-        <Button variant="outline-none" onClick={props.onHide}>
+      <Modal.Body>
+        <ul>
+          <li>
+            <strong>weather application</strong>
+          </li>
+        </ul>
+      </Modal.Body>
+      <Modal.Footer style={{ backgroundColor: "black" }}>
+        <Button
+          variant="outline-none"
+          style={{ color: "white" }}
+          onClick={props.onHide}
+        >
           Close
         </Button>
       </Modal.Footer>

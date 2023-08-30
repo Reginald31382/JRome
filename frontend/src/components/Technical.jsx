@@ -23,23 +23,25 @@ const Technical = (props) => {
           gap: "3px 10px",
         }}
       >
-        <p>*React JS</p>
-        <p>*Angular</p>
-        <p>*HTML/CSS</p>
-        <p>*JavaScript</p>
-        <p>*MERN Stack</p>
-        <p>*Version Control (Git & Github)</p>
-        <p>*Web Services/Restful API's</p>
-        <p>*Jest</p>
-        <p>*Redux/toolkit</p>
-        <p>*CI/CD</p>
-        <p>*Docker</p>
-        <p>*Kubernetes</p>
-        <p>*Jenkins</p>
-        <p>*Linux</p>
-        <p>*Terraform</p>
-        <p>*Azure</p>
-        <p>*PostgreSQL</p>
+        <ul style={{ display: "flex", flexDirection: "column" }}>
+          <li>React JS</li>
+          <li>Angular</li>
+          <li>HTML/CSS</li>
+          <li>JavaScript</li>
+          <li>MERN Stack</li>
+          <li>Version Control (Git & Github)</li>
+          <li>Web Services/Restful API's</li>
+          <li>Jest</li>
+          <li>Redux/toolkit</li>
+          <li>CI/CD</li>
+          <li>Docker</li>
+          <li>Kubernetes</li>
+          <li>Jenkins</li>
+          <li>Linux</li>
+          <li>Terraform</li>
+          <li>Azure</li>
+          <li>PostgreSQL</li>
+        </ul>
       </Modal.Body>
       <Modal.Footer>
         <Button variant="outline-none" onClick={props.onHide}>

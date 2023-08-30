@@ -183,7 +183,9 @@ const AboutScreen = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<GiFuelTank />}
         >
-          <h3 className="vertical-timeline-element-title">U.S. Army</h3>
+          <h3 className="vertical-timeline-element-title">
+            U.S. Army <h5>(Reserve)</h5>
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">Livonia, MI</h4>
           <p>Petroleum Supply Specialist</p>
         </VerticalTimelineElement>
@@ -221,11 +223,13 @@ const AboutScreen = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
           icon={<GiTeacher />}
         >
-          <h3 className="vertical-timeline-element-title">U.S. Army </h3>
+          <h3 className="vertical-timeline-element-title">
+            U.S. Army <h5>(Reserve)</h5>
+          </h3>
           <h4 className="vertical-timeline-element-subtitle">
             Ft. Jackson, S.C.
           </h4>
-          <p>Army Instructor (Reserve)</p>
+          <p>Army Instructor</p>
         </VerticalTimelineElement>
         <VerticalTimelineElement
           className="vertical-timeline-element--education"
@@ -234,7 +238,7 @@ const AboutScreen = () => {
           icon={<GiBattleTank />}
         >
           <h3 className="vertical-timeline-element-title">
-            U.S. Army (Active)
+            U.S. Army <h5>(Active)</h5>
           </h3>
           <h4 className="vertical-timeline-element-subtitle">Ft. Carson, CO</h4>
           <p>M1A2 Armored Crewman</p>
