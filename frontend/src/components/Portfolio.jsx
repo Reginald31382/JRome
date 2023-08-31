@@ -21,7 +21,11 @@ const Portfolio = (props) => {
       <Modal.Body>
         <ul>
           <li>
-            <strong>weather application</strong>
+            <strong>
+              <a href="https://jrome-weather.netlify.app/">
+                weather application
+              </a>
+            </strong>
           </li>
         </ul>
       </Modal.Body>
