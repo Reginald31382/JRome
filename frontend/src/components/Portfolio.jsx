@@ -15,7 +15,7 @@ const Portfolio = (props) => {
           id="contained-modal-title-vcenter"
           style={{ color: "white" }}
         >
-          Coming Soon
+          My Project(s)
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
@@ -26,6 +26,7 @@ const Portfolio = (props) => {
                 href="https://jrome-weather.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
+                style={{ color: "black" }}
               >
                 weather application
               </a>
