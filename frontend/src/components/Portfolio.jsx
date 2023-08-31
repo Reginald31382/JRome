@@ -22,7 +22,11 @@ const Portfolio = (props) => {
         <ul>
           <li>
             <strong>
-              <a href="https://jrome-weather.netlify.app/">
+              <a
+                href="https://jrome-weather.netlify.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 weather application
               </a>
             </strong>

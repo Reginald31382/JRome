@@ -52,7 +52,11 @@ const Footer = () => {
             }}
           />
         </a>
-        <a href="https://www.linkedin.com/in/reginald-dixon-bb3431102/">
+        <a
+          href="https://www.linkedin.com/in/reginald-dixon-bb3431102/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedin
             style={{
               height: "30px",
