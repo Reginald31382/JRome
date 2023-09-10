@@ -99,6 +99,8 @@ const OrderScreen = () => {
     refetch();
   };
 
+  console.log(order?.orderItems);
+
   return isLoading ? (
     <Loader />
   ) : error ? (
@@ -167,6 +169,9 @@ const OrderScreen = () => {
                           <Link to={`/product/${item.product}`}>
                             {item.name}
                           </Link>
+                          <p>
+                            <strong>Size:</strong> {item.selectedSize}
+                          </p>
                         </Col>
                         <Col md={4}>
                           {item.qty} x ${item.price} = ${item.qty * item.price}

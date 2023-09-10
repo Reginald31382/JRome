@@ -10,6 +10,8 @@ import { verifyPayPalPayment, checkIfNewTransaction } from "../utils/paypal.js";
 const addOrderItems = asyncHandler(async (req, res) => {
   const { orderItems, shippingAddress, paymentMethod } = req.body;
 
+  // console.log("Order Items:", orderItems);
+
   if (orderItems && orderItems.length === 0) {
     res.status(400);
     throw new Error("No order items");
@@ -32,6 +34,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
         ...itemFromClient,
         product: itemFromClient._id,
         price: matchingItemFromDB.price,
+        // selectedSize: itemFromClient.selectedSize,
         _id: undefined,
       };
     });
@@ -39,6 +42,7 @@ const addOrderItems = asyncHandler(async (req, res) => {
     // calculate prices
     const { itemsPrice, taxPrice, shippingPrice, totalPrice } =
       calcPrices(dbOrderItems);
+    // calculate price end
 
     const order = new Order({
       orderItems: dbOrderItems,
@@ -82,7 +86,9 @@ const getOrderById = asyncHandler(async (req, res) => {
   }
 });
 
-// ADMIN controls below---
+//***                                     ***//
+//          ADMIN controls below          ---//
+//***                                     ***//
 
 // @desc    Update order to paid
 // @route   PUT /api/orders/:id/pay

@@ -28,6 +28,7 @@ const ProductScreen = () => {
   const navigate = useNavigate();
 
   const [qty, setQty] = useState(1);
+  const [selectedSize, setSelectedSize] = useState("");
   const [rating, setRating] = useState(0);
   const [comment, setComment] = useState("");
 
@@ -44,8 +45,13 @@ const ProductScreen = () => {
   const { userInfo } = useSelector((state) => state.auth);
 
   const addToCartHandler = () => {
-    dispatch(addToCart({ ...product, qty }));
-    navigate("/cart");
+    if (selectedSize) {
+      dispatch(addToCart({ ...product, qty, selectedSize }));
+      navigate("/cart");
+    } else {
+      // Handle the case where a size is not selected
+      toast.error("Please select a size before adding to cart.");
+    }
   };
 
   const submitHandler = async (e) => {
@@ -124,7 +130,7 @@ const ProductScreen = () => {
                   {product.countInStock > 0 && (
                     <ListGroup.Item>
                       <Row>
-                        <Col>Qty</Col>
+                        <Col>Select Qty</Col>
                         <Col>
                           <Form.Control
                             as="select"
@@ -134,11 +140,28 @@ const ProductScreen = () => {
                             {[...Array(product.countInStock).keys()].map(
                               (x) => (
                                 <option key={x + 1} value={x + 1}>
-                                  {" "}
                                   {x + 1}
                                 </option>
                               )
                             )}
+                          </Form.Control>
+                        </Col>
+                      </Row>
+                      <br />
+                      <Row>
+                        <Col>Select Size</Col>
+                        <Col>
+                          <Form.Control
+                            as="select"
+                            value={selectedSize}
+                            onChange={(e) => setSelectedSize(e.target.value)} // Update selected size
+                          >
+                            <option value=""></option>
+                            {product.size.map((sizeOption) => (
+                              <option key={sizeOption} value={sizeOption}>
+                                {sizeOption}
+                              </option>
+                            ))}
                           </Form.Control>
                         </Col>
                       </Row>
