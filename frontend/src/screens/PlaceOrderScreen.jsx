@@ -26,12 +26,14 @@ const PlaceOrderScreen = () => {
 
   const dispatch = useDispatch();
   const placeOrderHandler = async () => {
+    console.log(cart);
     try {
       const res = await createOrder({
         orderItems: cart.cartItems,
         shippingAddress: cart.shippingAddress,
         paymentMethod: cart.paymentMethod,
         itemsPrice: cart.itemsPrice,
+        size: cart.selectedSize,
         shippingPrice: cart.shippingPrice,
         taxPrice: cart.taxPrice,
         totalPrice: cart.totalPrice,
@@ -75,7 +77,7 @@ const PlaceOrderScreen = () => {
                   {cart.cartItems.map((item, index) => (
                     <ListGroup.Item key={index}>
                       <Row>
-                        <Col md={1}>
+                        <Col md={2}>
                           <Image
                             src={item.image}
                             alt={item.name}
@@ -85,6 +87,11 @@ const PlaceOrderScreen = () => {
                         </Col>
                         <Col>
                           <Link to={`/product/${item._id}`}>{item.name}</Link>
+                          <Col>
+                            <p>
+                              <strong>Size:</strong> {item.selectedSize}
+                            </p>
+                          </Col>
                         </Col>
                         <Col md={4}>
                           {item.qty} x ${item.price} = ${item.qty * item.price}
@@ -109,6 +116,7 @@ const PlaceOrderScreen = () => {
                   <Col>${cart.itemsPrice}</Col>
                 </Row>
               </ListGroup.Item>
+
               <ListGroup.Item>
                 <Row>
                   <Col>Shipping</Col>
