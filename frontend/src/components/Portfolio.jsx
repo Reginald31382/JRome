@@ -32,6 +32,18 @@ const Portfolio = (props) => {
               </a>
             </strong>
           </li>
+          <li>
+            <strong>
+              <a
+                href="https://sallyquosto.github.io/covid-cocktails/"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: "black" }}
+              >
+                covid cocktail (Group Project @GrandCircus)
+              </a>
+            </strong>
+          </li>
         </ul>
       </Modal.Body>
       <Modal.Footer style={{ backgroundColor: "black" }}>
