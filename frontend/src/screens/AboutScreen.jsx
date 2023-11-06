@@ -40,7 +40,7 @@ const AboutScreen = () => {
             }}
             onClick={() => setTechShow(true)}
           >
-            <strong>Technical Skills</strong>
+            <strong>Tech. Skills</strong>
           </Button>
 
           <Technical show={techShow} onHide={() => setTechShow(false)} />

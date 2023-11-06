@@ -10,7 +10,7 @@ const Technical = (props) => {
       centered
       style={{ color: "black", backgroundColor: "rgba(55, 156, 238, 0.7)" }}
     >
-      <Modal.Header closeButton>
+      <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           Front-End Development / DevOps Engineering
         </Modal.Title>

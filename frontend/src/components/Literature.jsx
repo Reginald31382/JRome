@@ -10,7 +10,7 @@ const Literature = (props) => {
       centered
       style={{ color: "black", backgroundColor: "rgba(55, 156, 238, 0.7)" }}
     >
-      <Modal.Header closeButton>
+      <Modal.Header>
         <Modal.Title id="contained-modal-title-vcenter">
           My Philosophy
         </Modal.Title>
@@ -18,17 +18,24 @@ const Literature = (props) => {
       <Modal.Body
         style={{
           display: "flex",
-          flexDirection: "rows",
+          flexDirection: "column",
           justifyContent: "center",
+          alignItems: "center",
           flexWrap: "wrap",
           fontStyle: "italic",
+          textAlign: "center",
         }}
       >
-        <p>I am a lifelong Creator and Developer.</p>
+        <p className="title" style={{ fontWeight: "bolder" }}>
+          Innovative Visionary and Lifelong Creator, Pioneering the Intersection
+          of Creativity and Development.
+        </p>
         <p>
-          "My vision of success engulfs prosperity and ingenuity. I truly
-          believe everyone can strive for greatness once you apply yourself in
-          'that' something you love."
+          "In my vision of success, the pursuit of prosperity is intertwined
+          with unwavering dedication and ingenuity. I firmly hold the belief
+          that every individual possesses the capacity to achieve greatness when
+          they channel their efforts into a passion that resonates deeply with
+          them."
         </p>
         <p>~Reggie</p>
       </Modal.Body>

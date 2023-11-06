@@ -23,28 +23,39 @@ const Portfolio = (props) => {
           <li>
             <strong>
               <a
-                href="https://jrome-weather.netlify.app/"
+                href="https://sallyquosto.github.io/covid-cocktails/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "black" }}
+                style={{ color: "black", textDecoration: "none" }}
               >
-                weather application
+                covid cocktail (Group Project @GrandCircus)
               </a>
             </strong>
           </li>
           <li>
             <strong>
               <a
-                href="https://sallyquosto.github.io/covid-cocktails/"
+                href="https://jrome-weather.netlify.app/"
                 target="_blank"
                 rel="noopener noreferrer"
-                style={{ color: "black" }}
+                style={{ color: "black", textDecoration: "none" }}
               >
-                covid cocktail (Group Project @GrandCircus)
+                weather application
               </a>
             </strong>
           </li>
         </ul>
+        <a
+          href=""
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            textDecoration: "none",
+            color: "black",
+          }}
+        >
+          Visit my Portfolio page for more..
+        </a>
       </Modal.Body>
       <Modal.Footer style={{ backgroundColor: "black" }}>
         <Button
