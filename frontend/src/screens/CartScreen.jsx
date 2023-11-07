@@ -10,9 +10,11 @@ import {
   Card,
 } from "react-bootstrap";
 import { FaTrash } from "react-icons/fa";
+import { BsArrowLeftShort } from "react-icons/bs";
 import Message from "../components/Message";
 import { addToCart } from "../slices/cartSlice";
 import { removeFromCart } from "../slices/cartSlice";
+import { LinkContainer } from "react-router-bootstrap";
 
 const CartScreen = () => {
   const navigate = useNavigate();
@@ -54,8 +56,13 @@ const CartScreen = () => {
                     <Col md={3}>
                       <Link to={`/product/${item._id}`}>{item.name}</Link>
                     </Col>
+                    <p>Cost:</p>
                     <Col md={2}>${item.price}</Col>
+                    <hr />
+                    <p>Size:</p>
                     <Col md={2}>{item.selectedSize}</Col>
+                    <hr />
+                    {""}
                     <Col md={2}>
                       <p>QTY</p>
                       <Form.Control
@@ -77,6 +84,7 @@ const CartScreen = () => {
                     </Col>
 
                     <Col md={1}>
+                      <hr style={{ color: "transparent" }} />
                       <Button
                         type="button "
                         variant="light"
@@ -119,7 +127,19 @@ const CartScreen = () => {
         </Col>
       </Row>
       {/*Create a back button to go back to shopping*/}
-      <p>Continue Shopping</p>
+      <LinkContainer to="/">
+        <div
+          style={{
+            display: "flex",
+            lineHeight: ".9",
+            textDecoration: "none",
+            color: "gray",
+          }}
+        >
+          <BsArrowLeftShort />
+          <p>Continue Shopping</p>
+        </div>
+      </LinkContainer>
     </>
   );
 };

@@ -46,7 +46,7 @@ const Portfolio = (props) => {
           </li>
         </ul>
         <a
-          href=""
+          href="/"
           style={{
             display: "flex",
             justifyContent: "center",
