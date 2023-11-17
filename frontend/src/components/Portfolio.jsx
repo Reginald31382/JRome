@@ -46,7 +46,7 @@ const Portfolio = (props) => {
           </li>
         </ul>
         <a
-          href="/"
+          href="https://jrome-portfolio.netlify.app/"
           style={{
             display: "flex",
             justifyContent: "center",
