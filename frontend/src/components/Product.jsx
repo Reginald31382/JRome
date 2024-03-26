@@ -6,15 +6,38 @@ import "../index.css";
 
 const Product = ({ product }) => {
   return (
-    <Card className="my-3 p-3 rounded" style={{ height: "95%" }}>
-      <Link to={`/product/${product._id}`}>
-        <Card.Img
-          src={product.image}
-          variant="top"
-          style={{ height: "300px", objectFit: "contain" }}
-        />
+    <Card
+      className="my-1 p-3 rounded"
+      style={{
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+      }}
+    >
+      <Link to={`/product/${product._id}`} style={{ textAlign: "center" }}>
+        <div className="pro__img" style={{ flex: "1" }}>
+          <Card.Img
+            src={product.image}
+            alt={product.name}
+            variant="top"
+            style={{
+              height: "100%",
+              width: "100%",
+              objectFit: "contain",
+            }}
+          />
+        </div>
       </Link>
-      <Card.Body>
+      <Card.Body
+        style={{
+          flex: "1",
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
         <Link to={`/product/${product._id}`}>
           <Card.Title as="div" className="product.title">
             <strong>{product.name}</strong>
