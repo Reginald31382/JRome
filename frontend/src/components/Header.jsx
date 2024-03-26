@@ -8,7 +8,9 @@ import SearchBox from "./SearchBox";
 import { resetCart } from "../slices/cartSlice";
 import { FiShoppingCart } from "react-icons/fi";
 import { FaUser } from "react-icons/fa";
-import jrome from "../assets/jrome.png";
+// import jrome from "../assets/jrome.png";
+
+import "../index.css";
 
 const Header = () => {
   const { cartItems } = useSelector((state) => state.cart);
@@ -36,7 +38,8 @@ const Header = () => {
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>
-              <img className="jbrand" src={jrome} alt="jromeBrand" />
+              <h2 className="navbar__logo">J'rome's Studio</h2>
+              {/* <img className="jbrand" src={jrome} alt="jromeBrand" /> */}
             </Navbar.Brand>
           </LinkContainer>
           <Navbar.Toggle aria-controls="basic-navbar-nav" />
@@ -55,8 +58,8 @@ const Header = () => {
                   </div>
                 </Nav.Link>
               </LinkContainer>
-              <LinkContainer to="/about">
-                <Nav.Link>About</Nav.Link>
+              <LinkContainer to="/gallery">
+                <Nav.Link>Gallery</Nav.Link>
               </LinkContainer>
               {userInfo ? (
                 <>

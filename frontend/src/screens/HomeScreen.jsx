@@ -42,9 +42,8 @@ const HomeScreen = () => {
       </div>
       <h1
         style={{
-          color: "lightBlue",
+          color: "black",
           padding: "5px",
-          fontFamily: "Labrada",
         }}
       >
         Top Gear
@@ -66,9 +65,7 @@ const HomeScreen = () => {
         <>
           <h1
             style={{
-              color: "lightBlue",
               padding: "5px",
-              fontFamily: "Labrada",
             }}
           >
             Latest Products

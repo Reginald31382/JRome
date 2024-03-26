@@ -11,9 +11,9 @@ const Meta = ({ title, description, keywords }) => {
 };
 
 Meta.defaultProps = {
-  title: "Welcome to Blak Groth",
+  title: "Welcome to J'rome Studio",
   description: "We sell the best quality gear in town",
-  keywords: "gear, buy gear, afordable gear",
+  keywords: "gear, buy gear, affordable gear",
 };
 
 export default Meta;

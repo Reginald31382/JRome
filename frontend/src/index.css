@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
+
+.navbar__logo {
+  color: black;
+  font-family: "Carattere", cursive;
+  font-weight: 700;
+  font-style: normal;
+
+  position: relative;
+  top: 0.5rem;
+}
+
+h1 {
+  color: black;
+  font-family: "Carattere", cursive;
+  font-weight: 300;
+  font-style: normal;
+
+  position: relative;
+  top: 0.5rem;
+}
