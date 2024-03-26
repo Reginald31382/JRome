@@ -19,7 +19,7 @@ const HomeScreen = () => {
     <>
       <div style={{ display: "flex", justifyContent: "center" }}>
         <div
-          className="shadow-sm p-3 mb-5 bg-white rounded"
+          className="shadow-sm p-3 mb-5 bg-white rounded advertise"
           style={{
             border: "1px solid #ccc",
             borderRadius: "5px",
@@ -30,7 +30,7 @@ const HomeScreen = () => {
           }}
         >
           <a
-            className="shadow-lg p-3 mb-5 bg-white rounded"
+            className="shadow-lg p-3 bg-white rounded"
             style={{ textDecoration: "none", display: "block" }}
             href="https://www.aliveshoes.com/jrome"
             target="_blank"
