@@ -156,7 +156,7 @@ const ProductScreen = () => {
                             value={selectedSize}
                             onChange={(e) => setSelectedSize(e.target.value)} // Update selected size
                           >
-                            <option value=""></option>
+                            <option value="">S-XXL</option>
                             {product.size.map((sizeOption) => (
                               <option key={sizeOption} value={sizeOption}>
                                 {sizeOption}

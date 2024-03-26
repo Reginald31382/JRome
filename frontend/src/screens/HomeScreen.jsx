@@ -28,7 +28,7 @@ const HomeScreen = () => {
         <a
           className="shadow-lg p-3 mb-5 bg-white rounded"
           style={{ textDecoration: "none" }}
-          href="https://www.aliveshoes.com"
+          href="https://www.aliveshoes.com/jrome"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -36,7 +36,7 @@ const HomeScreen = () => {
             src={jrome}
             alt="j'Rome"
             style={{ height: "120px", paddingBottom: "15px" }}
-          />{" "}
+          />
           GET YOURS!
         </a>
       </div>
