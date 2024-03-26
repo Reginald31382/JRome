@@ -34,7 +34,7 @@ const Header = () => {
 
   return (
     <header>
-      <Navbar bg="info" variant="dark" expand="md" collapseOnSelect>
+      <Navbar className="navi__bar" expand="md" collapseOnSelect>
         <Container>
           <LinkContainer to="/">
             <Navbar.Brand>

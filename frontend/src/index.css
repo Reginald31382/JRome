@@ -1,5 +1,30 @@
 @import url("https://fonts.googleapis.com/css2?family=Carattere&display=swap");
 
+:root {
+  --header-height: 3rem;
+  --nav-width: 68px;
+
+  --cyan-50: #ecfeff;
+  --cyan-100: #cffafe;
+  --cyan-200: #a5f3fc;
+  --cyan-300: #67e8f9;
+  --cyan-400: #22d3ee;
+  --cyan-500: #06b6d4;
+  --cyan-600: #0891b2;
+  --cyan-700: #0e7490;
+  --cyan-720: #0e74908a;
+  --cyan-800: #155e75;
+  --cyan-900: #164e63;
+  --cyan-950: #083344;
+
+  --color-gradient: linear-gradient(
+    202deg,
+    rgba(34, 211, 238, 1) 0%,
+    rgba(14, 116, 144, 1) 50%,
+    rgba(8, 51, 68, 1) 100%
+  );
+}
+
 .navbar__logo {
   color: black;
   font-family: "Carattere", cursive;
@@ -18,4 +43,8 @@ h1 {
 
   position: relative;
   top: 0.5rem;
+}
+
+.navi__bar {
+  background: var(--cyan-700);
 }

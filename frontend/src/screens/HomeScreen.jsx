@@ -37,7 +37,16 @@ const HomeScreen = () => {
             alt="j'Rome"
             style={{ height: "120px", paddingBottom: "15px" }}
           />
-          GET YOURS!
+          GET AN EXCLUSIVE PAIR DIRECTLY FROM THE ALIVE SHOES WEBSITE.
+          <img
+            src={jrome}
+            alt="j'Rome"
+            style={{
+              height: "120px",
+              paddingBottom: "15px",
+              transform: "scaleX(-1)",
+            }}
+          />
         </a>
       </div>
       <h1
