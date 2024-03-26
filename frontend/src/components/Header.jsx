@@ -48,7 +48,14 @@ const Header = () => {
               <SearchBox />
               <LinkContainer to="/cart">
                 <Nav.Link>
-                  <div style={{ display: "flex" }}>
+                  <div
+                    style={{
+                      display: "flex",
+                      flexDirection: "row",
+                      alignItems: "center",
+                      gap: ".2rem",
+                    }}
+                  >
                     <FiShoppingCart /> Cart
                     {cartItems.length > 0 && (
                       <Badge pill bg="info">

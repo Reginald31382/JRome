@@ -17,41 +17,48 @@ const HomeScreen = () => {
 
   return (
     <>
-      <div
-        className="shadow-sm p-3 mb-5 bg-white rounded "
-        style={{
-          display: "flex",
-          justifyContent: "center",
-          alignItems: "center",
-        }}
-      >
-        <a
-          className="shadow-lg p-3 mb-5 bg-white rounded"
-          style={{ textDecoration: "none" }}
-          href="https://www.aliveshoes.com/jrome"
-          target="_blank"
-          rel="noopener noreferrer"
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <div
+          className="shadow-sm p-3 mb-5 bg-white rounded"
+          style={{
+            border: "1px solid #ccc",
+            borderRadius: "5px",
+            boxShadow: "0px 4px 6px rgba(0, 0, 0, 0.1)",
+            transition: "transform 0.2s",
+            cursor: "pointer",
+            overflow: "hidden",
+          }}
         >
-          <img
-            src={jrome}
-            alt="j'Rome"
-            style={{ height: "120px", paddingBottom: "15px" }}
-          />
-          GET AN EXCLUSIVE PAIR DIRECTLY FROM THE ALIVE SHOES WEBSITE.
-          <img
-            src={jrome}
-            alt="j'Rome"
-            style={{
-              height: "120px",
-              paddingBottom: "15px",
-              transform: "scaleX(-1)",
-            }}
-          />
-        </a>
+          <a
+            className="shadow-lg p-3 mb-5 bg-white rounded"
+            style={{ textDecoration: "none", display: "block" }}
+            href="https://www.aliveshoes.com/jrome"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <img
+              src={jrome}
+              alt="j'Rome"
+              style={{ height: "120px", paddingBottom: "15px" }}
+            />
+            <span style={{ fontSize: "0.8em", maxWidth: "200px" }}>
+              GET AN EXCLUSIVE PAIR DIRECTLY FROM THE ALIVE SHOES WEBSITE.
+            </span>
+            <img
+              src={jrome}
+              alt="j'Rome"
+              style={{
+                height: "120px",
+                paddingBottom: "15px",
+                transform: "scaleX(-1)",
+              }}
+            />
+          </a>
+        </div>
       </div>
+
       <h1
         style={{
-          color: "black",
           padding: "5px",
         }}
       >

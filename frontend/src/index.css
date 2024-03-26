@@ -35,7 +35,9 @@
   top: 0.5rem;
 }
 
-h1 {
+h1,
+h2,
+h3 {
   color: black;
   font-family: "Carattere", cursive;
   font-weight: 300;
@@ -47,4 +49,9 @@ h1 {
 
 .navi__bar {
   background: var(--cyan-700);
+}
+
+h3 {
+  color: red;
+  font-weight: 800;
 }
