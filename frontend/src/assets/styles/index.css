@@ -155,6 +155,10 @@ table th {
     justify-content: center;
     margin-right: 1rem;
   }
+
+  .navbar__logo {
+    margin-left: 1rem;
+  }
 }
 
 @media all and (min-width: 480px) and (max-width: 768px) {
