@@ -6,15 +6,7 @@ import "../index.css";
 
 const Product = ({ product }) => {
   return (
-    <Card
-      className="my-1 p-3 rounded"
-      style={{
-        height: "100%",
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "center",
-      }}
-    >
+    <Card className="product-card p-3 rounded">
       <Link to={`/product/${product._id}`} style={{ textAlign: "center" }}>
         <div className="pro__img" style={{ flex: "1" }}>
           <Card.Img

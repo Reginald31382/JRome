@@ -10,7 +10,7 @@ import {
   Card,
 } from "react-bootstrap";
 import { FaTrash } from "react-icons/fa";
-import { BsArrowLeftShort } from "react-icons/bs";
+// import { BsArrowLeftShort } from "react-icons/bs";
 import Message from "../components/Message";
 import { addToCart } from "../slices/cartSlice";
 import { removeFromCart } from "../slices/cartSlice";
@@ -136,8 +136,8 @@ const CartScreen = () => {
             color: "gray",
           }}
         >
-          <BsArrowLeftShort />
-          <p>Continue Shopping</p>
+          {/* <BsArrowLeftShort />
+          <p>Continue Shopping</p> */}
         </div>
       </LinkContainer>
     </>

@@ -4456,7 +4456,7 @@ fieldset:disabled .btn {
   --bs-card-title-color: ;
   --bs-card-subtitle-color: ;
   --bs-card-border-width: 1rem;
-  --bs-card-border-color: var(--cyan-700);
+  --bs-card-border-color: white;
   --bs-card-border-radius: var(--bs-border-radius);
   --bs-card-box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1),
     0 2px 4px rgba(255, 20, 20, 0.06);
